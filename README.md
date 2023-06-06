@@ -15,3 +15,23 @@ Please watch a small clip video on youtube
 The live was done with the folks who have bought the course
 Please join the course to see the complete video - https://harkirat.classx.co.in/new-courses/2
 
+## Local Setup
+
+### Python
+Make sure you have python venv module
+```bash
+brew install python3
+#OR
+sudo apt install python3-venv
+```
+Now setup the virtual environment
+```bash
+make setup
+make install
+```
+#### Update dependencies
+If any dependency change update them in the `python-script/requirments.in` and execute
+```bash
+make freeze
+```
+This will generate a `python-script/requirements.txt` and you can run `make install` again to install the added packages.
